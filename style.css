@@ -1,0 +1,240 @@
+/*
+Theme Name: OSN
+Theme URI: http://theopensource.ninja/themes/twentyfourteen/
+Author: James Dearing
+Author URI: http://theopensource.ninja/
+Description: Twenty Fourteen theme with mods
+Version: 1.4.2
+License: GNU General Public License v3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+Text Domain: OSN-WordPress-Theme
+Template: twentyfourteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+.site, .hfeed, .site-header, masthead {
+	max-width: 100% !important;
+}
+
+.entry-content {
+	max-width: 80% !important;
+}
+
+footer, .entry-header {
+	text-align: center;
+}
+
+.category-feed, .author-feed {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: center;
+}
+
+input, textarea, select {
+	color: black !important;
+	background-color: white !important;
+}
+
+body {
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.img-zoomable {
+	cursor: zoom-in;
+}
+
+.comic-transcript {
+	cursor: vertical-text;
+	font-family: "Nina", "Humor Sans", "Tomson Talks", "Nibby", "Vipond Comic LC", "Vipond Comic UC", "Comic Neue", "Comic Neue Angular", "Comic Relief", "Dekko", "Ruji's Handwriting Font", "Open Comic Font", "Comic Sans MS", "Ubuntu Titling", sans-serif;
+}
+
+.comic-original-url {
+	cursor: alias;
+}
+
+/*
+
+ 	font-weight: 100; Comic Neue Light
+ 	font-weight: 300; Comic Neue Regular
+ 	font-weight: 700; Comic Neue Bold
+	font-style: oblique; for the oblique equivalents.
+
+  Change 'Comic Neue' to 'Comic Neue Angular' for the Angular variants
+  For example Comic Neue Angular Bold Oblique would be:
+
+ 	body {
+		font-family: 'Comic Neue Angular', sans-serif;
+		font-style: oblique;
+		font-weight: 700;
+    font-size: 1em;
+    line-height: 1.5;
+ 	}
+	or in shorthand: body { font: oblique 700 1em/1.5 'Comic Neue Angular', sans-serif; }
+
+*/
+
+/* ==========================================================================
+   FONT STACK
+   ========================================================================== */
+
+/*	@font-face format credit to Chris Coyier http://css-tricks.com/snippets/css/using-font-face/ */
+/*	And John, Kevin & Sven Read http://www.newnet-soft.com/blog/csstypography */
+/*	An old but still great article on @font-face performance http://www.stevesouders.com/blog/2009/10/13/font-face-and-performance/ */
+
+@font-face {
+	font-family: 'Nina';
+	src: url('./fonts/NinaMedium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Comic Neue';
+  src: url('./fonts/ComicNeue-Light.eot'); /* IE9 Compat Modes */
+  src: url('./fonts/ComicNeue-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/ComicNeue-Light.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/ComicNeue-Light.woff2') format('woff2'), /* Even Moderner Browsers */
+       url('./fonts/ComicNeue-Light.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'Comic Neue';
+  src: url('./fonts/ComicNeue-Light-Oblique.eot'); /* IE9 Compat Modes */
+  src: url('./fonts/ComicNeue-Light-Oblique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/ComicNeue-Light-Oblique.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/ComicNeue-Light-Oblique.woff2') format('woff2'), /* Even Moderner Browsers */
+       url('./fonts/ComicNeue-Light-Oblique.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-weight: 100;
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: 'Comic Neue';
+  src: url('./fonts/ComicNeue-Regular.eot'); /* IE9 Compat Modes */
+  src: url('./fonts/ComicNeue-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/ComicNeue-Regular.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/ComicNeue-Regular.woff2') format('woff2'), /* Even Moderner Browsers */
+       url('./fonts/ComicNeue-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Comic Neue';
+  src: url('./fonts/ComicNeue-Regular-Oblique.eot'); /* IE9 Compat Modes */
+  src: url('./fonts/ComicNeue-Regular-Oblique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/ComicNeue-Regular-Oblique.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/ComicNeue-Regular-Oblique.woff2') format('woff2'), /* Even Moderner Browsers */
+       url('./fonts/ComicNeue-Regular-Oblique.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-weight: 300;
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: 'Comic Neue';
+  src: url('./fonts/ComicNeue-Bold.eot'); /* IE9 Compat Modes */
+  src: url('./fonts/ComicNeue-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/ComicNeue-Bold.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/ComicNeue-Bold.woff2') format('woff2'), /* Even Moderner Browsers */
+       url('./fonts/ComicNeue-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Comic Neue';
+  src: url('./fonts/ComicNeue-Bold-Oblique.eot'); /* IE9 Compat Modes */
+  src: url('./fonts/ComicNeue-Bold-Oblique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/ComicNeue-Bold-Oblique.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/ComicNeue-Bold-Oblique.woff2') format('woff2'), /* Even Moderner Browsers */
+       url('./fonts/ComicNeue-Bold-Oblique.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-weight: 700;
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: 'Comic Neue Angular';
+  src: url('./fonts/ComicNeue-Angular-Light.eot'); /* IE9 Compat Modes */
+  src: url('./fonts/ComicNeue-Angular-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/ComicNeue-Angular-Light.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/ComicNeue-Angular-Light.woff2') format('woff2'), /* Even Moderner Browsers */
+       url('./fonts/ComicNeue-Angular-Light.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'Comic Neue Angular';
+  src: url('./fonts/ComicNeue-Angular-Light-Oblique.eot'); /* IE9 Compat Modes */
+  src: url('./fonts/ComicNeue-Angular-Light-Oblique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/ComicNeue-Angular-Light-Oblique.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/ComicNeue-Angular-Light-Oblique.woff2') format('woff2'), /* Even Moderner Browsers */
+       url('./fonts/ComicNeue-Angular-Light-Oblique.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-weight: 100;
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: 'Comic Neue Angular';
+  src: url('./fonts/ComicNeue-Angular-Regular.eot'); /* IE9 Compat Modes */
+  src: url('./fonts/ComicNeue-Angular-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/ComicNeue-Angular-Regular.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/ComicNeue-Angular-Regular.woff2') format('woff2'), /* Even Moderner Browsers */
+       url('./fonts/ComicNeue-Angular-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Comic Neue Angular';
+  src: url('./fonts/ComicNeue-Angular-Regular-Oblique.eot'); /* IE9 Compat Modes */
+  src: url('./fonts/ComicNeue-Angular-Regular-Oblique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/ComicNeue-Angular-Regular-Oblique.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/ComicNeue-Angular-Regular-Oblique.woff2') format('woff2'), /* Even Moderner Browsers */
+       url('./fonts/ComicNeue-Angular-Regular-Oblique.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-weight: 300;
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: 'Comic Neue Angular';
+  src: url('./fonts/ComicNeue-Angular-Bold.eot'); /* IE9 Compat Modes */
+  src: url('./fonts/ComicNeue-Angular-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/ComicNeue-Angular-Bold.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/ComicNeue-Angular-Bold.woff2') format('woff2'), /* Even Moderner Browsers */
+       url('./fonts/ComicNeue-Angular-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Comic Neue Angular';
+  src: url('./fonts/ComicNeue-Angular-Bold-Oblique.eot'); /* IE9 Compat Modes */
+  src: url('./fonts/ComicNeue-Angular-Bold-Oblique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/ComicNeue-Angular-Bold-Oblique.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/ComicNeue-Angular-Bold-Oblique.woff2') format('woff2'), /* Even Moderner Browsers */
+       url('./fonts/ComicNeue-Angular-Bold-Oblique.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-weight: 700;
+  font-style: oblique;
+}
+
+a, abbr, acronym, address, applet, big, blockquote, body, button, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, iframe, input, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, select, small, span, strike, strong, sub, sup, table, tbody, td, textarea, tfoot, th, thead, tr, tt, ul, var {
+	font-family: "Comic Neue", "Comic Neue Angular", "Nina", "Humor Sans", "Tomson Talks", "Nibby", "Vipond Comic LC", "Vipond Comic UC", "Comic Relief", "Dekko", "Ruji's Handwriting Font", "Open Comic Font", "Comic Sans MS", "Ubuntu Titling", sans-serif;
+	/* Enable a font's kerning: http://stackoverflow.com/questions/15160897/font-feature-settings-what-is-the-correct-syntax */
+    font-feature-settings: "kern";
+    -moz-font-feature-settings: "kern";
+    -webkit-font-feature-settings: "kern";
+}
+
+p {
+	margin-bottom: 1em;
+}
+
+code,
+kbd,
+tt,
+var,
+samp,
+pre {
+	font-family: "Comic Neue Angular", "Comic Neue", "Nina", "Humor Sans", "Tomson Talks", "Nibby", "Vipond Comic LC", "Vipond Comic UC", "Comic Neue", "Comic Relief", "Dekko", "Ruji's Handwriting Font", "Open Comic Font", "Comic Sans MS", "Ubuntu Titling", sans-serif;
+}
