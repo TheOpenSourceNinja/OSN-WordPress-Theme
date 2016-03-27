@@ -4,7 +4,7 @@ Theme URI: https://github.com/TheOpenSourceNinja/OSN-WordPress-Theme
 Author: James Dearing
 Author URI: https://theopensource.ninja/
 Description: Twenty Fourteen theme with mods
-Version: 1.4.2
+Version: 1.4.3
 License: GNU General Public License v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
@@ -218,7 +218,39 @@ body {
   font-style: oblique;
 }
 
-a, abbr, acronym, address, applet, big, blockquote, body, button, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, iframe, input, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, select, small, span, strike, strong, sub, sup, table, tbody, td, textarea, tfoot, th, thead, tr, tt, ul, var {
+@font-face {
+  font-family: 'Hack';
+  src: url('./fonts/eot/hack-regular-webfont.eot?v=2.019');
+  src: url('./fonts/eot/hack-regular-webfont.eot?#iefix&v=2.019') format('embedded-opentype'), url('./fonts/woff2/hack-regular-webfont.woff2?v=2.019') format('woff2'), url('./fonts/woff/hack-regular-webfont.woff?v=2.019') format('woff'), url('./fonts/web-ttf/hack-regular-webfont.ttf?v=2.019') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hack';
+  src: url('./fonts/eot/hack-bold-webfont.eot?v=2.019');
+  src: url('./fonts/eot/hack-bold-webfont.eot?#iefix&v=2.019') format('embedded-opentype'), url('./fonts/woff2/hack-bold-webfont.woff2?v=2.019') format('woff2'), url('./fonts/woff/hack-bold-webfont.woff?v=2.019') format('woff'), url('./fonts/web-ttf/hack-bold-webfont.ttf?v=2.019') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hack';
+  src: url('./fonts/eot/hack-italic-webfont.eot?v=2.019');
+  src: url('./fonts/eot/hack-italic-webfont.eot?#iefix&v=2.019') format('embedded-opentype'), url('./fonts/woff2/hack-italic-webfont.woff2?v=2.019') format('woff2'), url('./fonts/woff/hack-italic-webfont.woff?v=2.019') format('woff'), url('./fonts/web-ttf/hack-italic-webfont.ttf?v=2.019') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Hack';
+  src: url('./fonts/eot/hack-bolditalic-webfont.eot?v=2.019');
+  src: url('./fonts/eot/hack-bolditalic-webfont.eot?#iefix&v=2.019') format('embedded-opentype'), url('./fonts/woff2/hack-bolditalic-webfont.woff2?v=2.019') format('woff2'), url('./fonts/woff/hack-bolditalic-webfont.woff?v=2.019') format('woff'), url('./fonts/web-ttf/hack-bolditalic-webfont.ttf?v=2.019') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+a, abbr, acronym, address, applet, big, blockquote, body, button, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, iframe, input, ins, kbd, label, legend, li, object, ol, p, q, s, samp, select, small, span, strike, strong, sub, sup, table, tbody, td, textarea, tfoot, th, thead, tr, tt, ul, var {
 	font-family: "Comic Neue", "Comic Neue Angular", "Nina", "Humor Sans", "Tomson Talks", "Nibby", "Vipond Comic LC", "Vipond Comic UC", "Comic Relief", "Dekko", "Ruji's Handwriting Font", "Open Comic Font", "Comic Sans MS", "Ubuntu Titling", sans-serif;
 	/* Enable a font's kerning: http://stackoverflow.com/questions/15160897/font-feature-settings-what-is-the-correct-syntax */
     font-feature-settings: "kern";
@@ -236,5 +268,5 @@ tt,
 var,
 samp,
 pre {
-	font-family: "Comic Neue Angular", "Comic Neue", "Nina", "Humor Sans", "Tomson Talks", "Nibby", "Vipond Comic LC", "Vipond Comic UC", "Comic Neue", "Comic Relief", "Dekko", "Ruji's Handwriting Font", "Open Comic Font", "Comic Sans MS", "Ubuntu Titling", sans-serif;
+	font-family: "Hack", "DejaVu Mono", "Bitstream Vera Sans Mono", "FreeMono", monospace;
 }
